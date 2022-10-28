@@ -1243,6 +1243,9 @@ ul {
 		background: #121026;
 		padding: 5px 15px;
 	}
+	.light .mob-sub-menu {
+		background: #F2F3F5;
+	}
 	.mob-sub-menu.active {
 		height: 296px;
 	}
@@ -1291,9 +1294,11 @@ ul {
 		letter-spacing: 0.015em;
 		margin-top: 5px;
 	}
+	.active-overview .sub-menu-item a .dark-color,
 	.mob-sub-menu .sub-menu-item.active a .dark-color {
 		color: #207DFF;
 	}
+	.active-overview .sub-menu-item a .icon svg path,
 	.mob-sub-menu .sub-menu-item.active a .icon svg path {
 		fill: #207DFF;
 	}
@@ -1457,8 +1462,16 @@ ul {
 		margin-bottom: 55px;
 		background: #050314;
 	}
+	.light .booster-sec {
+		background: #F8F8F8;
+	}
+	body,
 	.booster-side-col {
 		background: #050314;
+	}
+	body.light,
+	.light .booster-side-col {
+		background: #F8F8F8;
 	}
 	.booster-main {
 		padding: 0;
@@ -1477,6 +1490,10 @@ ul {
 		display: block;
 	}
 
+	.booster-main,
+	.mob-position,
+	.my-position.hide,
+	.booster-side-col.hide,
 	.hello-block,
 	.mob-block.hide,
 	.booster-sec .uniswap-sec,
@@ -1500,7 +1517,233 @@ ul {
 		display: block;
 		height: auto;
 	}
+
+	.mob {width: 100%;}
+	.active-overview .side-top,
+	.active-overview .performens-history,
+	.active-overview .hello-block {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+	.active-pools .booster-side .side-logo {
+		display: none;
+	}
+	.active-pools .side-tab-block {
+		display: block;
+	}
+	.side-tab-block .pools-title h2 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.015em;
+		margin-bottom: 25px;
+	}
+	.side-tab-block .mob-pools-block input {
+		color: #818C99;
+		background: #121026;
+		border-radius: 10px;
+		border: 1px solid transparent;
+		padding: 7px 12px 7px 36px;
+		width: 100%;
+		background-image: url('../images/pool-search-icon.svg');
+		background-repeat: no-repeat;
+		background-position: left 12px top 12px;
+	}
+	.side-tab-block .mob-pools-block input::placeholder {
+		font-size: 17px;
+		line-height: 22px;
+		letter-spacing: -0.41px;
+	}
+	.light .side-tab-block .mob-pools-block input {
+		background: #EEEEEE;
+		border: 1px solid rgba(0, 0, 0, 0.12);
+		color: #000;
+	}
+	.booster-side .nav-pills .nav-link {
+		padding: 0 20px 4px 20px;
+	}
+	.side-tab li {
+		border-radius: 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	}
+	.side-tab li:last-child {
+		border: none;
+	}
+	.side-tab li a {
+		padding: 8px 0;
+	}
+	.side-tab li:hover,
+	.side-tab li.active {
+		background: transparent;
+	}
+	.side-tab {
+		padding-bottom: 0;
+	}
+	.dark-divider {
+		border: none;
+	}
+	/* / */
+	.my-position.active {
+		display: block;
+	}
+	.light .my-position.active {
+		background: #F8F8F8;
+	}
+	.my-position .nav-tabs {
+		flex-wrap: nowrap;
+	}
+	.my-position .nav-tabs .nav-link {
+		white-space: nowrap;
+		margin-right: 0;
+		width: 100%;
+	}
+	.position-item:last-child {
+		margin-bottom: 18px;
+	}
+	.active-overview .booster-main {
+		display: block;
+		padding-bottom: 20px;
+	}
 	/* /// */
+	.active-pools .my-position,
+	.active-pools .performens-history,
+	.active-pools .uniswap-sec {
+		display: block;
+	}
+	.active-pools .booster-main {
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 13px 0;
+		position: relative;
+	}
+	.active-pools .booster-main.active {
+		display: flex;
+	}
+	.active-pools .mob-position {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 13px 0;
+		margin-bottom: 20px;
+	}
+
+	.active-pools .mob.one {
+		order: 1;
+	}
+	.active-pools .my-position {
+		order: 2;
+		width: 100%;
+	}
+	.active-pools .booster-content {
+		order: 3;
+		margin-top: 40px;
+	}
+	.active-pools .performens-history {
+		order: 4;
+	}
+	.active-pools .booster-history {
+		order: 5;
+	}
+	.active-pools .uniswap-sec {
+		order: 6;
+	}
+	.active-pools .mob {
+		order: 7;
+	}
+
+	.my-position .withdraw-rov .center-arrow {
+		position: unset;
+		margin-top: -8px;
+	}
+	.my-position .withdraw-rov .add-col{
+		margin-bottom: 14px;
+	}
+	.my-position .withdraw-rov .col-xl-6 {
+		padding: 0;
+	}
+	.my-position .center-arrow,
+	.center-arrow {
+		margin: -10px auto;
+		width: 107px;
+		height: 32px;
+		z-index: 2;
+	}
+	.arrow-col {
+		z-index: 2;
+	}
+	.center-arrow img {
+		transform: rotate(90deg);
+	}
+
+	.my-position-tab {
+		background: transparent;
+		border: none;
+		padding: 24px 15px 0;
+	}
+	.my-position-tab .tab-rov .col-xl {
+		background: #0F1032;
+		border: 1px solid rgba(32, 125, 255, 0.08);
+		border-radius: 10px;
+		padding: 20px 15px;
+	}
+	.mob-position h2 {
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 26px;
+		margin-right: auto;
+	}
+	.mob-position .back-position {
+		margin-right: auto;
+	}
+	.my-position .add-booster-top {
+		align-items: flex-start;
+		margin-bottom: 20px;
+	}
+
+	.booster-main .token-items {
+		margin-bottom: 10px;
+		height: auto;
+	}
+	
+	.booster-main .my-position .my-title {
+		margin: 0 0 20px;
+	}
+	.booster-main .booster-title {
+		display: none;
+	}
+	/* //////////////// */
+	.active-history .booster-side-col {
+		display: none;
+	}
+	.active-history .booster-main,
+	.active-history .booster-history {
+		display: block;
+	}
+	.booster-history .load-more a {
+		display: block;
+		padding: 13px;
+		width: 100%;
+		text-align: center;
+	}
+	.active-history {
+		padding-bottom: 100px;
+	}
+	.booster-sec.start {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+
+
+	/* /// */
+	.uniswap-sec .uniswap-graph img,
 	.performens-history .performens-graph img {
 		width: 100%;
 		margin-left: -7px;
