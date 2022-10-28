@@ -11,6 +11,12 @@ $(function (){
         $('body').toggleClass('light');
     });
 
+    $('.light-mode').on('click',function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('body').toggleClass('light');
+    });
+
     $('.welcome-btns .metamask-btn, #mob-overview').on('click',function(e){
         e.preventDefault();
         $('.mob-block').addClass('hide');

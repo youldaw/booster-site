@@ -1859,6 +1859,21 @@ ul {
 	.booster-main .booster-title {
 		margin-bottom: 20px;
 	}
+	/* // */
+	.light-mode {
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		z-index: 10002;
+	}
+	.light-mode.active .moon,
+	.light-mode .sun {
+		display: inline-block;
+	}
+	.light-mode .moon,
+	.light-mode.active .sun {
+		display: none;
+	}
 }
 
 
