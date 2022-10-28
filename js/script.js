@@ -8,7 +8,7 @@ $(function (){
 
     $('#switch-mode').on('click',function(e){
         e.preventDefault();
-        $('.wrap').toggleClass('light');
+        $('body').toggleClass('light');
     });
 
     $('.welcome-btns .metamask-btn, #mob-overview').on('click',function(e){

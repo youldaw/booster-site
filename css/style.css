@@ -188,6 +188,31 @@ td {
 .dropdown-toggle::after {
 	content: none;
 }
+.booster-side .side-top .dropdown .dropdown-menu {
+	min-width: 100%;
+	background: #090A2B;
+	border: 0.5px solid #351D52;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 2px 24px rgba(0, 0, 0, 0.08);
+	border-radius: 10px;
+}
+.light .booster-side .side-top .dropdown .dropdown-menu {
+	background: #EEEEEE;
+	border-color: rgba(0, 0, 0, 0.12);
+}
+.booster-side .side-top .dropdown .dropdown-menu li a {
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+}
+.light .booster-side .side-top .dropdown .dropdown-menu li a {
+	color: #000;
+}
+.booster-side .side-top .dropdown .dropdown-menu li a:focus,
+.booster-side .side-top .dropdown .dropdown-menu li a:hover {
+	background: transparent;
+	color: #818C99;
+}
+
 .booster-side .side-top .crypto-price {
 	text-align: center;
 }
@@ -315,6 +340,9 @@ ul {
 	transition: .3s all ease;
 	margin-left: auto;
 	opacity: 0;
+}
+.light .side-tab li a i svg path {
+	stroke: #207DFF;
 }
 .side-tab li:hover,
 .side-tab li.active {
@@ -687,6 +715,12 @@ ul {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 38px;
+}
+.light .my-position .add-booster-top img {
+	display: none;
+}
+.light .my-position .add-booster-top img.mob {
+	display: block;
 }
 .my-position .add-booster-top .add-booster-number h2 {
 	font-weight: 700;
@@ -1071,6 +1105,9 @@ ul {
   background: transparent;
   border-radius: 4px;
 }
+.light .control__indicator {
+	border-color: #B8C1CC;
+}
 .control--radio .control__indicator {
   border-radius: 50%;
 }
@@ -1099,6 +1136,9 @@ ul {
 	border: solid #090A2B;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
+}
+.light .control--checkbox .control__indicator:after {
+	border-color: #fff;
 }
 
 .control--radio .control__indicator:after {
@@ -1216,6 +1256,7 @@ ul {
 		background: #8C30F5;
 		border-radius: 10px;
 		margin-bottom: 20px;
+		color: #fff;
 	}
 	.mob-block .mob-btn a:hover {
 		color: #fff;
@@ -1245,6 +1286,7 @@ ul {
 	}
 	.light .mob-sub-menu {
 		background: #F2F3F5;
+		box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 	}
 	.mob-sub-menu.active {
 		height: 296px;
@@ -1309,6 +1351,10 @@ ul {
 		top: auto;
 		bottom: 0;
 	}
+	.light .welcome-modal,
+	.light .connect-modal {
+		color: #000;
+	}
 	.welcome-modal .modal-dialog,
 	.connect-modal .modal-dialog {
 		margin: auto 8px 30px 8px;
@@ -1343,6 +1389,10 @@ ul {
 		background: #090A2B;
 		border-radius: 18px;
 	}
+	.light .welcome-modal .modal-content,
+	.light .connect-modal .modal-content {
+		background: #fff;
+	}
 	.connect-modal .connect-top {
 		text-align: center;
 	}
@@ -1357,6 +1407,9 @@ ul {
 		border-radius: 36px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	.light .connect-modal .connect-top .connect-img {
+		background: rgba(32, 125, 255, 0.09);
 	}
 	.welcome-modal .welcome-top h3,
 	.connect-modal .connect-top h3 {
@@ -1383,12 +1436,18 @@ ul {
 	.connect-modal .connect-btns a img {
 		margin-right: 10px;
 	}
+	.light .connect-modal .connect-btns a {
+		background: rgba(0, 0, 0, 0.03);
+	}
 	/* welcome moda */
 	.welcome-modal .welcome-text {
 		padding: 16px 7px;
 		background: rgba(255, 255, 255, 0.03);
 		border-radius: 12px;
 		margin-bottom: 20px;
+	}
+	.light .welcome-modal .welcome-text {
+		background: rgba(0, 0, 0, 0.03);
 	}
 	.welcome-modal .welcome-text ul {
 		list-style: disc;
@@ -1420,6 +1479,7 @@ ul {
 		background: #8C30F5;
 		border-radius: 12px;
 		border: none;
+		color: #fff;
 	}
 	.welcome-modal .welcome-btns button[disabled] {
 		cursor: not-allowed;
@@ -1463,7 +1523,7 @@ ul {
 		background: #050314;
 	}
 	.light .booster-sec {
-		background: #F8F8F8;
+		background: transparent
 	}
 	body,
 	.booster-side-col {
@@ -1655,6 +1715,10 @@ ul {
 		order: 7;
 	}
 
+	.active-pools .booster-content {
+		display: block;
+	}
+
 	.my-position .withdraw-rov .center-arrow {
 		position: unset;
 		margin-top: -8px;
@@ -1712,9 +1776,6 @@ ul {
 	.booster-main .my-position .my-title {
 		margin: 0 0 20px;
 	}
-	.booster-main .booster-title {
-		display: none;
-	}
 	/* //////////////// */
 	.active-history .booster-side-col {
 		display: none;
@@ -1739,10 +1800,13 @@ ul {
 		width: 100%;
 		height: 100%;
 	}
-
-
-
-
+	.booster-main .my-position .my-title h2,
+	.booster-main .booster-title h2,
+	.performens-history .performens-title h2,
+	.uniswap-sec .uniswap-title h2 {
+		font-size: 24px;
+		line-height: 1.2;
+	}
 	/* /// */
 	.uniswap-sec .uniswap-graph img,
 	.performens-history .performens-graph img {
@@ -1753,11 +1817,49 @@ ul {
 	.booster-side .side-top .crypto-price p {
 		margin-bottom: 0;
 	}
+	.light .dashboard-dark-bg {
+		background: #fff;
+	}
+	.light .active-pools .my-position-tab {
+		background: transparent;
+		box-shadow: none;
+		border: none;
+		border-radius: 0;
+	}
+	.light .side-tab li:hover, .light .side-tab li.active {
+		background: transparent;
+	}
+	.light .side-tab li {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	}
+	.light .side-tab li:last-child,
+	.light .dark-divider {
+		border: none;
+	}
+	.light .my-position-tab .tab-rov .col-xl {
+		background: #fff;
+	}
+	.mob-title {
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: 20px;
+	}
+	.mob-title h2 {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.015em;
+	}
+	.booster-main .booster-title h2 img {
+		display: none;
+	}
+	#switch-mode {
+		display: none;
+	}
+	.booster-main .booster-title {
+		margin-bottom: 20px;
+	}
 }
-
-
-
-
 
 
 
