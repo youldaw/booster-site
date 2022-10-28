@@ -1546,6 +1546,12 @@ ul {
 		/* overflow-x: hidden;
 		overflow-y: auto; */
 	}
+	.booster-col {
+		padding-bottom: 60px;
+	}
+	.booster-sec {
+		padding-bottom: 100px;
+	}
 
 	.for-mob.side-swap,
 	.for-mob.side-socials {
