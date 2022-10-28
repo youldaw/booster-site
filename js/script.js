@@ -48,7 +48,7 @@ $(function (){
     });
     
     $(document).mouseup(function (e){
-        var div = $(".booster-sec, .booster-main, .booster-side-col, #mob-more");
+        var div = $(".booster-sec, .booster-main, .booster-side-col, #mob-more, .light-mode");
         if (!div.is(e.target) 
             && div.has(e.target).length === 0) {
             div.removeClass('active-pools');

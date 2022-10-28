@@ -1543,8 +1543,8 @@ ul {
 	.booster-sec,
 	.booster-side-col {
 		height: 100%;
-		overflow-x: hidden;
-		overflow-y: auto;
+		/* overflow-x: hidden;
+		overflow-y: auto; */
 	}
 
 	.for-mob.side-swap,
@@ -1603,7 +1603,7 @@ ul {
 	}
 	.side-tab-block .mob-pools-block input {
 		color: #818C99;
-		background: #121026;
+		background-color: #121026;
 		border-radius: 10px;
 		border: 1px solid transparent;
 		padding: 7px 12px 7px 36px;
@@ -1618,7 +1618,7 @@ ul {
 		letter-spacing: -0.41px;
 	}
 	.light .side-tab-block .mob-pools-block input {
-		background: #EEEEEE;
+		background-color: #EEEEEE;
 		border: 1px solid rgba(0, 0, 0, 0.12);
 		color: #000;
 	}
