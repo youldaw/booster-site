@@ -1414,7 +1414,7 @@ input[type=number] {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 84vh;
+		height: 80vh;
 	}
 	/* //////////////////////////// */
 	.mob-sub-menu {
