@@ -1334,6 +1334,7 @@ input[type=number] {
 
 
 @media only screen and (max-width: 576px) {
+	.pc {display: none;}
 	.mob {display: block;}
 	/* /// */
 	.booster-side-col {
@@ -1374,9 +1375,9 @@ input[type=number] {
 		font-size: 16px;
 		line-height: 20px;
 		width: 208px;
-		margin: 30px auto 77px auto;
+		margin: 30px auto auto auto;
 	}
-	.mob-block .mob-btn a {
+	.connect.mob-btn a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -1387,15 +1388,22 @@ input[type=number] {
 		margin-bottom: 20px;
 		color: #fff;
 	}
-	.mob-block .mob-btn a:hover {
+	.connect.mob-btn a:hover {
 		color: #fff;
 	}
-	.mob-block .mob-btn a img {
+	.connect.mob-btn a img {
 		margin-right: 10px;
 		margin-top: -5px;
 	}
 	.booster-side .side-logo {
 		margin-top: 20px;
+		margin-bottom: 0;
+	}
+	.connect-mob {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 88vh;
 	}
 	/* //////////////////////////// */
 	.mob-sub-menu {
