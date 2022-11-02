@@ -6,7 +6,7 @@ $(function (){
         $(this).parent().addClass('active');
     });
 
-    $('#switch-mode').on('click',function(e){
+    $('#switch-mode, .mob-settings').on('click',function(e){
         e.preventDefault();
         $('body').toggleClass('light');
     });

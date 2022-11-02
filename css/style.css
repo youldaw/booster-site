@@ -806,6 +806,7 @@ ul {
 	border: none;
 	height:auto;
 	padding: 0;
+	width: 90%;
 }
 .my-position .add-booster-top .add-booster-number input::placeholder {
 	font-weight: 700;
@@ -1355,10 +1356,6 @@ input[type=number] {
 		padding-right: 15px;
 	}
 	/* /////////////////////// */
-	.booster-side,
-	.booster-block, .booster-col {
-		height: auto;
-	}
 	.mob-block {
 		text-align: center;
 	}
@@ -1398,7 +1395,7 @@ input[type=number] {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 90%;
+		width: 87%;
 		padding: 10px;
 		background: #8C30F5;
 		border-radius: 10px;
@@ -1433,7 +1430,8 @@ input[type=number] {
 		flex-direction: column;
 		width: 100%;
 		background: #121026;
-		padding: 5px 15px;
+		padding: 5px 0;
+		overflow: hidden;
 	}
 	.light .mob-sub-menu {
 		background: #F2F3F5;
@@ -1453,7 +1451,7 @@ input[type=number] {
 		width: 100%;
 	}
 	.more-block .side-swap > a {
-		padding: 12px 0;
+		padding: 12px 22px;
 		margin: 0;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 	}
@@ -1467,6 +1465,7 @@ input[type=number] {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 	}
 	.mob-sub-menu .sub-menu-item a {
 		display: block;
@@ -1696,11 +1695,29 @@ input[type=number] {
 	.booster-sec,
 	.booster-side-col {
 		height: 100%;
-		overflow-x: hidden;
-		overflow-y: auto;
+		/* overflow-x: hidden;
+		overflow-y: auto; */
+	}
+	.booster-sec {
+		overflow: auto;
 	}
 	.booster-col {
 		padding-bottom: 60px;
+	}
+	.active-history .booster-col {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.booster-history .booster-history-title h2,
+	.booster-history .load-more {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.booster-history .booster-history-title h2 {
+		margin-top: 24px;
+	}
+	.booster-history .history-table table tbody tr .history-amount-td p span {
+		display: block;
 	}
 	/* .booster-sec {
 		padding-bottom: 100px;
@@ -1762,19 +1779,23 @@ input[type=number] {
 		margin-bottom: 25px;
 	}
 	.side-tab-block .mob-pools-block input {
+		font-size: 16px;
+		line-height: 16px;
+		letter-spacing: -0.41px;
 		color: #818C99;
 		background-color: #121026;
 		border-radius: 10px;
 		border: 1px solid transparent;
-		padding: 7px 12px 7px 36px;
+		padding: 0 12px 0 36px;
+		height: 36px;
 		width: 100%;
 		background-image: url('../images/pool-search-icon.svg');
 		background-repeat: no-repeat;
-		background-position: left 12px top 12px;
+		background-position: left 12px top 8px;
 	}
 	.side-tab-block .mob-pools-block input::placeholder {
-		font-size: 17px;
-		line-height: 22px;
+		font-size: 16px;
+		line-height: 16px;
 		letter-spacing: -0.41px;
 	}
 	.light .side-tab-block .mob-pools-block input {
@@ -1880,8 +1901,15 @@ input[type=number] {
 	}
 
 	.my-position .withdraw-rov .center-arrow {
-		position: unset;
+		position: relative;
 		margin-top: -8px;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.my-position .center-arrow {
+		backdrop-filter: blur(6px);
 	}
 	.my-position .withdraw-rov .add-col{
 		margin-bottom: 14px;
@@ -1894,7 +1922,7 @@ input[type=number] {
 		margin: -10px auto;
 		width: 107px;
 		height: 32px;
-		z-index: 2;
+		z-index: 3;
 	}
 	.arrow-col {
 		z-index: 2;
@@ -1927,6 +1955,13 @@ input[type=number] {
 	.my-position .add-booster-top {
 		align-items: flex-start;
 		margin-bottom: 20px;
+	}
+	.light .my-position .add-booster-top .add-logo .mob {
+		display: block;
+	}
+	.light .my-position .add-booster-top .add-logo .pc,
+	.my-position .add-booster-top .add-logo .mob {
+		display: none;
 	}
 
 	.booster-main .token-items {
