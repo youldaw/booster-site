@@ -1356,6 +1356,16 @@ input[type=number] {
 	.mob-block {
 		text-align: center;
 	}
+	.mob-block .side-logo {
+		margin-top: 60px;
+	}
+	.light .mob-block .dark-logo,
+	.mob-block .light-logo {
+		display: none;
+	}
+	.light .mob-block .light-logo {
+		display: block;
+	}
 	.mob-block .mob-title h2 {
 		font-weight: 700;
 		font-family: "ALS Sector Bold";
@@ -1370,6 +1380,7 @@ input[type=number] {
 		font-size: 24px;
 		line-height: 30px;
 		letter-spacing: 0.015em;
+		color: #fff;
 	}
 	.mob-block .mob-title p {
 		font-size: 16px;
@@ -1385,7 +1396,7 @@ input[type=number] {
 		padding: 10px;
 		background: #8C30F5;
 		border-radius: 10px;
-		margin-bottom: 20px;
+		margin-top: auto;
 		color: #fff;
 	}
 	.connect.mob-btn a:hover {
@@ -1403,7 +1414,7 @@ input[type=number] {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 88vh;
+		height: 84vh;
 	}
 	/* //////////////////////////// */
 	.mob-sub-menu {
@@ -1675,7 +1686,7 @@ input[type=number] {
 	.booster-main {
 		padding: 0;
 	}
-	html,
+	/* html,
 	body,
 	.wrap,
 	.main,
@@ -1684,10 +1695,10 @@ input[type=number] {
 		height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
-	}
-	.booster-col {
+	} */
+	/* .booster-col {
 		padding-bottom: 60px;
-	}
+	} */
 	/* .booster-sec {
 		padding-bottom: 100px;
 	} */
