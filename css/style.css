@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: "ALS Sector Bold";
-    src: url(../fonts/ALS\ Sector\ Bold\ Bold.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/ALSSectorBold-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 body {
 	margin: 0;
@@ -37,7 +37,9 @@ a,img,button,input {
 	transition: .3s all ease;
 }
 
-
+.wrap {
+	overflow: hidden;
+}
 .booster-sec {
 	color: #fff;
 }
@@ -85,14 +87,14 @@ a {
 }
 
 .dark-text {
-	color: rgba(255, 255, 255, 0.28);
+	color: rgba(255, 255, 255, 0.57);
 }
 .light .dark-text {
 	color: #9EA6B0;
 }
 
 .dashboard-dark-bg {
-	background: #060721;
+	background: #090A2B;
 }
 .light .dashboard-dark-bg {
 	background: #F9F9F9;
@@ -218,6 +220,7 @@ td {
 }
 .booster-side .side-top .crypto-price p {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 16px;
 	line-height: 20px;
 	margin-bottom: 20px;
@@ -240,6 +243,7 @@ td {
 .booster-side .side-nav li a .text {
 	display: flex;
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -375,6 +379,7 @@ ul {
 .side-swap > a .text {
 	display: flex;
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 19px;
 }
@@ -436,6 +441,13 @@ ul {
 	line-height: 34px;
 	letter-spacing: 0.015em;
 }
+.light .my-position .my-title h2,
+.light .booster-title h2,
+.light .performens-title h2,
+.light .booster-history .booster-history-title h2,
+.light .uniswap-title h2 {
+	color: #1c1c1c;
+}
 .booster-main .booster-title h2 img {
 	margin-left: 20px;
 }
@@ -452,6 +464,7 @@ ul {
 .booster-main .token-items > span {
 	display: inline-block;
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 20px;
 	margin-bottom: 12px;
@@ -471,6 +484,7 @@ ul {
 }
 .booster-main .token-items p {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 24px;
 	line-height: 20px;
 }
@@ -489,6 +503,29 @@ ul {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	position: relative;
+}
+.position-item.my-balance i.blur {
+	display: block;
+	width: 45px;
+	height: 6px;
+	position: absolute;
+	left: 14px;
+	top: 33px;
+	background: #98C734;
+	filter: blur(21.5px);
+}
+.position-item.earned-fees i.blur {
+	display: block;
+	width: 66px;
+	height: 39px;
+	position: absolute;
+	left: 18px;
+	top: 33px;
+	background: rgba(32, 125, 255, 0.29);
+	filter: blur(21.5px);
+}
+.light .position-item i.blur {
+	display: none;
 }
 .position-item:last-child {
 	margin-bottom: 0;
@@ -509,6 +546,7 @@ ul {
 }
 .position-item h2 {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 24px;
 	line-height: 20px;
 	margin-bottom: 26px;
@@ -595,10 +633,11 @@ ul {
 	position: absolute;
 	top: 126px;
 	left: 96px;
+	z-index: 1;
 }
 .light .my-position .add-col .blur{display: none;}
 .my-position .add-block {
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 }
 .my-position .add-block.one {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -616,10 +655,26 @@ ul {
 .my-position .add-max:last-child {
 	margin-bottom: 0;
 }
-.my-position .add-max h3 {
+.my-position .add-max input {
+	font-weight: 700;
+	font-family: "ALS Sector Bold";
+	font-size: 20px;
+	line-height: 20px;
+	background: transparent;
+	border: none;
+	color: #fff;
+	width: 80%;
+}
+.light .my-position .add-max input::placeholder,
+.light .my-position .add-max input {
+	color: #000;
+}
+.my-position .add-max input::placeholder {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 20px;
+	color: #FFFFFF;
+	font-family: "ALS Sector Bold";
 }
 .my-position .add-max .add-balance {
 	display: flex;
@@ -636,6 +691,12 @@ ul {
 	border-radius: 25px;
 	padding: 4px 10px;
 	margin-right: 12px;
+}
+.my-position .add-max .add-balance .max:hover {
+	color: #fff;
+}
+.light .my-position .add-max .add-balance .max:hover {
+	color: #000;
 }
 .my-position .light .add-max .add-balance .max {
 	background: rgba(162, 147, 255, 0.08);
@@ -655,6 +716,7 @@ ul {
 }
 .my-position .add-crypto p .text {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -699,6 +761,8 @@ ul {
 	height: 110px;
 	width: 40px;
 	background: linear-gradient(270deg, rgba(32, 125, 255, 0.08) 0%, rgba(140, 48, 245, 0.03) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(32, 125, 255, 0.08) 0%, rgba(140, 48, 245, 0.03) 100%);
+	background: -moz-linear-gradient(270deg, rgba(32, 125, 255, 0.08) 0%, rgba(140, 48, 245, 0.03) 100%);
 	border: 1px solid rgba(49, 92, 233, 0.14);
 	border-radius: 10px;
 	margin: 30px auto 0;
@@ -712,8 +776,9 @@ ul {
 }
 .my-position .add-booster-top {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
+	/* flex-wrap: wrap; */
 	margin-bottom: 38px;
 }
 .light .my-position .add-booster-top img {
@@ -722,11 +787,33 @@ ul {
 .light .my-position .add-booster-top img.mob {
 	display: block;
 }
-.my-position .add-booster-top .add-booster-number h2 {
+.my-position .add-booster-top .add-booster-number {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.my-position .add-booster-top .add-booster-number input {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 24px;
 	line-height: 20px;
 	margin-bottom: 18px;
+	color: #fff;
+	background: transparent;
+	border: none;
+	height:auto;
+	padding: 0;
+}
+.my-position .add-booster-top .add-booster-number input::placeholder {
+	font-weight: 700;
+	font-family: "ALS Sector Bold";
+	font-size: 24px;
+	line-height: 20px;
+	color: #fff;
+}
+.light .my-position .add-booster-top .add-booster-number input::placeholder,
+.light .my-position .add-booster-top .add-booster-number input {
+	color: #000;
 }
 .my-position .add-booster-top .add-booster-number span {
 	display: inline-block;
@@ -763,6 +850,8 @@ ul {
 	border: 1px solid rgba(32, 125, 255, 0.08);
 	border-radius: 10px;
 	height: 100%;
+	z-index: 2;
+	position: relative;
 }
 .light .my-position .withdraw-block {
 	background: #fff;
@@ -775,6 +864,7 @@ ul {
 }
 .my-position .withdraw-block .withdraw-token h3 {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 20px;
 	line-height: 20px;
 }
@@ -800,6 +890,7 @@ ul {
 }
 .withdraw-amount .amount-range h4 {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 41px;
 	line-height: 36px;
 	color: #F4F4F4;
@@ -822,6 +913,13 @@ ul {
 	background: rgba(162, 147, 255, 0.08);
 	border-radius: 25px;
 	padding: 6px 16px 5px;
+	cursor: pointer;
+}
+.amount-percents span:hover {
+	color: #fff;
+}
+.light .amount-percents span:hover {
+	color: #000;
 }
 .withdraw-amount h4:after {
   content: "%";
@@ -831,24 +929,22 @@ ul {
 	outline: 0;
 	border: 0;
 	width: 100%;
-	background: #E1E3E6;
+	background: #3F8AE0;
 	border-radius: 1px;
 	margin: 25px 0 18px;
-	transition: box-shadow 0.2s ease-in-out;
+	
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .my-position input[type=range] {
     /* overflow: hidden; */
     height: 2px;
-    /* -webkit-appearance: none; */
+    -webkit-appearance: none;
     background-color: #3F8AE0;
   }
   .my-position input[type=range]::-webkit-slider-runnable-track {
     height: 4px;
     -webkit-appearance: none;
     color: #444;
-    -webkit-transition: box-shadow 0.2s ease-in-out;
-    transition: box-shadow 0.2s ease-in-out;
   }
   .my-position input[type=range]::-webkit-slider-thumb {
     width: 20px;
@@ -858,7 +954,7 @@ ul {
     background: #3F8AE0;
     border-radius: 50%;
     position: relative;
-	margin-top: -6px;
+	margin-top: -8px;
   }
   .my-position input[type=range]:active::-webkit-slider-thumb {
     background: #3F8AE0;
@@ -868,13 +964,16 @@ ul {
   background-color: #3F8AE0;
 }
 .my-position input[type=range]::-moz-range-track {
-  background-color: #9a905d;
+  background-color: #3F8AE0;
 }
+.my-position input[type=range]::-webkit-range-track {
+	background-color: #3F8AE0;
+  }
 .my-position input[type=range]::-ms-fill-lower {
-  background-color: #43e5f7;
+  background-color: #3F8AE0;
 }
 .my-position input[type=range]::-ms-fill-upper {
-  background-color: #9a905d;
+  background-color: #3F8AE0;
 }
 
 .my-position .withdraw-rov .center-arrow {
@@ -884,6 +983,12 @@ ul {
 	bottom: 0;
 	right: -20px;
 	margin: auto;
+	background: linear-gradient(270deg, rgba(32, 125, 255, 0.08) 0%, rgba(140, 48, 245, 0.03) 100%);
+	border: 1px solid rgba(49, 92, 233, 0.14);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border-radius: 10px;
+	z-index: 3;
 }
 
 .my-position .withdraw-right {
@@ -899,6 +1004,7 @@ ul {
 }
 .my-position .withdraw-coin p.coin-name {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 20px;
 }
@@ -913,6 +1019,7 @@ ul {
 }
 .my-position .withdraw-coin .withdraw-number h3 {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 20px;
 	line-height: 20px;
 	margin-bottom: 4px;
@@ -1016,6 +1123,7 @@ ul {
 }
 .booster-history .history-table table thead tr th {
 	font-weight: 700;
+	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 150%;
 	padding: 13px 16px;
@@ -1029,6 +1137,13 @@ ul {
 	vertical-align: middle;
 	border:none;
 }
+.booster-history .history-table table tbody tr.more-tr {
+	display: none;
+}
+.booster-history .history-table table.active tbody tr.more-tr {
+	display: table-row;
+}
+
 .booster-history .history-table table .history-coin-td {
 	display: flex;
 	align-items: center;
@@ -1149,6 +1264,19 @@ ul {
   border-radius: 50%;
   background: #fff;
 }
+/* // */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* ============================= */
 
 
 
@@ -1229,11 +1357,12 @@ ul {
 	}
 	.mob-block .mob-title h2 {
 		font-weight: 700;
+		font-family: "ALS Sector Bold";
 		font-size: 50px;
 		line-height: 50px;
 		letter-spacing: 0.015em;
 		color: #207DFF;
-		width: 237px;
+		width: 240px;
 		margin: 15px auto 50px auto;
 	}
 	.mob-block .mob-title h4 {
@@ -1414,6 +1543,7 @@ ul {
 	.welcome-modal .welcome-top h3,
 	.connect-modal .connect-top h3 {
 		font-weight: 700;
+		font-family: "ALS Sector Bold";
 		font-size: 20px;
 		line-height: 24px;
 		letter-spacing: 0.38px;
@@ -1505,6 +1635,7 @@ ul {
 	/* ////////// */
 	.hello-block .my-title h2 {
 		font-weight: 700;
+		font-family: "ALS Sector Bold";
 		font-size: 36px;
 		line-height: 40px;
 		letter-spacing: 0.38px;
@@ -1543,15 +1674,15 @@ ul {
 	.booster-sec,
 	.booster-side-col {
 		height: 100%;
-		/* overflow-x: hidden;
-		overflow-y: auto; */
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 	.booster-col {
 		padding-bottom: 60px;
 	}
-	.booster-sec {
+	/* .booster-sec {
 		padding-bottom: 100px;
-	}
+	} */
 
 	.for-mob.side-swap,
 	.for-mob.side-socials {
@@ -1602,6 +1733,7 @@ ul {
 	}
 	.side-tab-block .pools-title h2 {
 		font-weight: 700;
+		font-family: "ALS Sector Bold";
 		font-size: 24px;
 		line-height: 25px;
 		letter-spacing: 0.015em;
@@ -1762,6 +1894,7 @@ ul {
 	}
 	.mob-position h2 {
 		font-weight: 700;
+		font-family: "ALS Sector Bold";
 		font-size: 21px;
 		line-height: 26px;
 		margin-right: auto;
@@ -1852,6 +1985,7 @@ ul {
 	}
 	.mob-title h2 {
 		font-weight: 700;
+		font-family: "ALS Sector Bold";
 		font-size: 24px;
 		line-height: 25px;
 		letter-spacing: 0.015em;
@@ -1866,20 +2000,7 @@ ul {
 		margin-bottom: 20px;
 	}
 	/* // */
-	.light-mode {
-		position: fixed;
-		right: 10px;
-		top: 10px;
-		z-index: 10002;
-	}
-	.light-mode.active .moon,
-	.light-mode .sun {
-		display: inline-block;
-	}
-	.light-mode .moon,
-	.light-mode.active .sun {
-		display: none;
-	}
+	
 }
 
 

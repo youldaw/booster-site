@@ -82,6 +82,30 @@ $(function (){
             $('.range-percent').text(rangePercent);
             // $('[type="range"]').css('filter', 'hue-rotate(-' + rangePercent + 'deg)');
         });
+
+        $('.value-25').on('click',function(){
+            rangePercent = $('[type="range"]').val(25);
+            $('.range-percent').text('25');
+        });
+        $('.value-50').on('click',function(){
+            rangePercent = $('[type="range"]').val(50);
+            $('.range-percent').text('50');
+        });
+        $('.value-75').on('click',function(){
+            rangePercent = $('[type="range"]').val(75);
+            $('.range-percent').text('75');
+        });
+        $('.value-100').on('click',function(){
+            rangePercent = $('[type="range"]').val(100);
+            $('.range-percent').text('100');
+        });
     });
+
+    $('.load-more-btn').on('click',function(e){
+        e.preventDefault();
+        $('.history-table table').toggleClass('active');
+    });
+
 });
+
 
