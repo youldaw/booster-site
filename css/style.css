@@ -1357,7 +1357,7 @@ input[type=number] {
 		text-align: center;
 	}
 	.mob-block .side-logo {
-		margin-top: 60px;
+		margin: 60px 0;
 	}
 	.light .mob-block .dark-logo,
 	.mob-block .light-logo {
@@ -1414,7 +1414,7 @@ input[type=number] {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 80vh;
+		height: 88vh;
 	}
 	/* //////////////////////////// */
 	.mob-sub-menu {
