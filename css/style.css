@@ -2080,17 +2080,15 @@ input[type=number] {
 		margin-bottom: 20px;
 	}
 	/* // */
-	.slide-item.pr-10 {
+	.slide-item {
 		padding-right: 5px;
 	}
-	.slide-item.pl-10 {
+	.slide-item {
 		padding-left: 5px;
 	}
-	.booster-slide {
-		overflow: visible;
-		/* width: 280px; */
+	.booster-slide .owl-item img {
+		width: auto;
 	}
-	
 }
 
 

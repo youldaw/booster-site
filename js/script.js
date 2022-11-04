@@ -123,16 +123,15 @@ $(function (){
         } else if (checkWidth < 768) {
           owlPost.addClass('owl-carousel');
           owlPost.owlCarousel({
+            loop: true,
             items: 1.4,
             slideSpeed: 500,
             animateOut: 'fadeOut',
             touchDrag: true,
             mouseDrag: true,
-            // autoplay: true,
-            // autoplaySpeed: 8000,
-            // autoplayTimeout: 8000,
-            dots: false,
-            loop: false
+            autoHeight:true,
+            margin: 10,
+            dots: false
           });
         }
       }
