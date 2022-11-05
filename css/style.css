@@ -395,6 +395,7 @@ ul {
 	font-family: "ALS Sector Bold";
 	font-size: 14px;
 	line-height: 19px;
+	text-transform: uppercase;
 }
 .side-swap > a:hover .text {
 	color: #fff;
@@ -632,7 +633,7 @@ ul {
 }
 .light .my-position .nav-tabs .nav-item.show .nav-link,
 .light .my-position .nav-tabs .nav-link.active {
-	color: #000;
+	color: #1c1c1c;
 }
 
 .my-position .add-col {
@@ -753,8 +754,14 @@ ul {
 	border: none;
 	color: #fff;
 }
+.light .my-position .add-btns button {
+	background: #99AFFF;
+}
 .my-position .add-btns button:hover {
 	background: #011768;
+}
+.light .my-position .add-btns button:hover {
+	background: #182F83;
 }
 .my-position .add-btns button:first-child {
 	margin-right: 6px;
@@ -910,7 +917,7 @@ ul {
 	color: #F4F4F4;
 }
 .light .withdraw-amount h4 {
-	color: #000;
+	color: #1c1c1c;
 }
 .amount-percents {
 	display: flex;
@@ -1357,12 +1364,117 @@ input[type=number] {
 	.booster-main .token-items .total-token p {
 		font-size: 14px;
 	}
+	.booster-main .slide-item.pl-10 {
+		padding-left: 15px;
+	}
+	.booster-main .slide-item.pr-10 {
+		padding-right: 15px;
+	}
+	.booster-main .slide-item {
+		margin-bottom: 20px;
+	}
+	.booster-main .slide-item:last-child {
+		margin-bottom: 0;
+	}
+	.position-item:last-child {
+		margin-bottom: 20px;
+	}
+	.my-position-left {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		padding-right: 15px;
+	}
+	.my-position-left .position-item {
+		width: 48%;
+		height: 100%;
+		margin-bottom: 0;
+	}
+	.my-position .add-booster-top {
+		flex-wrap: wrap;
+	}
+	.my-position .add-booster-top .add-logo {
+		margin-top: 10px;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
 }
 
+@media only screen and (max-width: 992px) {
+	.my-position .withdraw-rov .center-arrow {
+		position: relative;
+		margin-top: -8px;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.my-position-left {
+		display: block;
+		margin-bottom: 0;
+	}
+	.my-position-left .position-item {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.my-position .withdraw-rov .add-col{
+		margin-bottom: 14px;
+	}
+	.my-position .withdraw-rov .col-xl-6 {
+		padding: 0;
+	}
+	.my-position-tab {
+		background: transparent;
+		border: none;
+		padding: 24px 15px 0;
+	}
+	.my-position-tab .tab-rov .col-xl {
+		background: #0F1032;
+		border: 1px solid rgba(32, 125, 255, 0.08);
+		border-radius: 10px;
+		padding: 20px 15px;
+	}
+	.my-position-left.pr-5 {
+		padding-right: 15px;
+	}
+	.my-position .center-arrow,
+	.center-arrow {
+		margin: -10px auto;
+		width: 107px;
+		height: 32px;
+		z-index: 3;
+	}
+	.my-position .withdraw-rov .center-arrow {
+		position: relative;
+		margin-top: -8px;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.my-position .center-arrow {
+		backdrop-filter: blur(6px);
+	}
+	.arrow-col {
+		z-index: 2;
+	}
+	.center-arrow img {
+		transform: rotate(90deg);
+	}
+}
 
 @media only screen and (max-width: 576px) {
 	.mob {display: block;}
 	/* /// */
+	.my-position .add-booster-top {
+		flex-wrap: nowrap;
+	}
+	.booster-main .slide-item.pr-10 {
+		padding-right: 10px;
+		padding-left: 0;
+	}
 	.booster-side-col {
 		max-width: 100%;
 	}
@@ -1923,48 +2035,7 @@ input[type=number] {
 		display: block;
 	}
 
-	.my-position .withdraw-rov .center-arrow {
-		position: relative;
-		margin-top: -8px;
-		right: 0;
-		left: 0;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.my-position .center-arrow {
-		backdrop-filter: blur(6px);
-	}
-	.my-position .withdraw-rov .add-col{
-		margin-bottom: 14px;
-	}
-	.my-position .withdraw-rov .col-xl-6 {
-		padding: 0;
-	}
-	.my-position .center-arrow,
-	.center-arrow {
-		margin: -10px auto;
-		width: 107px;
-		height: 32px;
-		z-index: 3;
-	}
-	.arrow-col {
-		z-index: 2;
-	}
-	.center-arrow img {
-		transform: rotate(90deg);
-	}
-
-	.my-position-tab {
-		background: transparent;
-		border: none;
-		padding: 24px 15px 0;
-	}
-	.my-position-tab .tab-rov .col-xl {
-		background: #0F1032;
-		border: 1px solid rgba(32, 125, 255, 0.08);
-		border-radius: 10px;
-		padding: 20px 15px;
-	}
+	
 	.mob-position h2 {
 		font-weight: 700;
 		font-family: "ALS Sector Bold";
